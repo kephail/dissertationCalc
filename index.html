@@ -236,7 +236,7 @@
         var weight = $( ".weight:eq(" + index + ")" ).val();
         grade += $( this ).val() * (weight / 100);
       });
-      $('.totalGrade').html('Total Grade: ' + grade + '%');
+      $('.totalGrade').html('Total Grade: ' + grade.toFixed(2) + '%');
     }
   </script>
 </body>
